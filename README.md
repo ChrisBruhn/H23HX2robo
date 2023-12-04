@@ -1,2 +1,2 @@
 # H23rodo
-aflevering af jeres robotter
+Dette repo er til aflevering af jeres robotter.
