@@ -4,19 +4,22 @@ import robocode.*;
 
 public class Powerkitty extends JuniorRobot
 {
+	boolean movingForward;
  public void run() {
      
         setColors(red,green,red,green,red);
 
         while (true) {
-           
-            ahead(100);
-
+           movingForward = true;
+            ahead(400);
+			turnGunRight(90);
             turnRight(90);
-
-            back(100);
-            
+			turnGunRight(90);
+			ahead(400);
+			turnGunRight(90);
             turnLeft(90);
+			turnGunRight(90);
+			
         }
     }
     public void onScannedRobot() {
@@ -29,7 +32,8 @@ public class Powerkitty extends JuniorRobot
     }
     public void onHitWall() {
      
-        back(20);
-        turnLeft(90);
+        back(50);
+        turnLeft(180);
+		turnGunRight(180);
     }
 }
