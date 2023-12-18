@@ -25,10 +25,10 @@ public class PiratLand extends JuniorRobot
 		// Robot main loop
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
-			ahead(100);
-			turnGunRight(360);
-			back(100);
-			turnGunRight(360);
+			  while (true) {
+      turnGunRight(360);
+    }
+	
 		}
 	}
 
