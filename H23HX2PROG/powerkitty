@@ -11,11 +11,11 @@ public class Powerkitty extends JuniorRobot
 
         while (true) {
            movingForward = true;
-            ahead(400);
+            ahead(200);
 			turnGunRight(90);
             turnRight(90);
 			turnGunRight(90);
-			ahead(400);
+			ahead(200);
 			turnGunRight(90);
             turnLeft(90);
 			turnGunRight(90);
@@ -32,7 +32,13 @@ public class Powerkitty extends JuniorRobot
     }
     public void onHitWall() {
      
-        back(50);
+        back(70);
+        turnLeft(180);
+		turnGunRight(180);
+    }
+}
+     
+        back(70);
         turnLeft(180);
 		turnGunRight(180);
     }
