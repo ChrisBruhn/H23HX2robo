@@ -11,11 +11,9 @@ public class PiratLand extends JuniorRobot
 	/**
 	 * run: PiratLand's default behavior
 	 */
-	public void run() {
-	 setBodyColor(Color.black);
-    setRadarColor(Color.green);
-    setGunColor(Color.black);
-    setBulletColor(Color.orange);	
+public void run() {
+    
+		
 		// Initialization of the robot should be put here
 
 		// Some color codes: blue, yellow, black, white, red, pink, brown, grey, orange...
