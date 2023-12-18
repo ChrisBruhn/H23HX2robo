@@ -34,7 +34,7 @@ public void run() {
 	 * onScannedRobot: What to do when you see another robot
 	 */
 	public void onScannedRobot() {
-		// Replace the next line with any behavior you would like
+		turnTo(scannedAngle);
 		fire(10);
 	}
 
