@@ -38,8 +38,3 @@ public class Powerkitty extends JuniorRobot
     }
 }
      
-        back(70);
-        turnLeft(180);
-		turnGunRight(180);
-    }
-}

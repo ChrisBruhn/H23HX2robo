@@ -1,4 +1,4 @@
-package H23HX2Prog;
+package H23HX2PROG;
 import robocode.*;
 
 import java.awt.Color;
