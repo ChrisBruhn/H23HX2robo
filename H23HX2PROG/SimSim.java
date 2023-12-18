@@ -6,29 +6,53 @@ import robocode.*;
 
 public class SimSim extends JuniorRobot
 {
+//Nakker lige noget kode fra "Tracker"
+	int count = 0; 
+	int gunTurn; 
+	int damboost = 0;
+
     public void run() {
         setColors(black, red, orange, yellow, red);
+		gunTurn = 10;
+		
         while (true) {
-			ahead(100);
-			turnRight(200);
-        }
-    }
+			turnRight(gunTurn);
+			count = count + 1;		
+			if (count > 0) {
+				gunTurn = -10;
+			}
+			if (count > 36) {
+				gunTurn = 10;
+			}
+			if (count > 72) {
+				count = 0;
+			}
+		}
+	}
 
     public void onHitByBullet() {
         turnTo(hitByBulletAngle);
     }
 
     public void onScannedRobot() {
+		count = 0;
+		 if (scannedVelocity == 0) {
+			 damboost = 7;
+		 }
+		 else {
+			 damboost = 0;
+		 }
         if (scannedDistance < 20) {
             turnTo(scannedAngle);
-            fire((scannedDistance-20)*-10);
+            fire(6 + damboost);
         }
-        if (scannedDistance < 300) {
-            turnTo(scannedAngle + 10);
-            fire(1);
-        } else {
+        if (scannedDistance < 200) {
             turnTo(scannedAngle);
-            ahead(100);
+            fire(1 + damboost);
+        } 
+		 else {
+            turnTo(scannedAngle);
+            ahead(200);
         }
     }
 
@@ -40,3 +64,5 @@ public class SimSim extends JuniorRobot
 		turnTo(hitRobotAngle);
 	}
 }
+
+
