@@ -1,5 +1,5 @@
 //flip, flop, fluppedubbedob, flippeflippeflop og flop
-// Jeg bruger ChatGPT som assistent. Dette kan bemærkes da jeg bruger et ord jeg slet ikke kender; execute.
+// Jeg bruger ChatGPT som assistent. Dette kan bemærkes da jeg bruger ord jeg slet ikke kender; f.x. execute eller case:.
 // Dancer er en robot jeg har prøvet at udvikle (på kort tid, lille budget, og dårlig viden). Pointen af robotten er at weave og dodge når den kommer i kontakt med et fjendelig skud. Det vil den gøre i 3 sekunder, før den går tilbage til at skanne og skyde.
 package h23hx2vDancer;
 import robocode.*;
