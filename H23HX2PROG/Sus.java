@@ -36,7 +36,7 @@ public class Sus extends JuniorRobot
 	public void onScannedRobot() {
 		// Replace the next line with any behavior you would like
 		turnTo(scannedAngle);
-		fire(4);
+		fire(10);
 		
 	}
 
